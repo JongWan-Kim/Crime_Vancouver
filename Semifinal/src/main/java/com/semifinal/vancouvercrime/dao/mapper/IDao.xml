@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="com.semifinal.vancouvercrime.dao.IDao">
+	<select id = "weather_list_Dao" resultType="com.semifinal.vancouvercrime.dto.ContentDto">
+			<!-- SELECT * FROM weather_factor ORDER BY AID DESC -->
+			
+			<!-- SELECT WEATHER_FACTOR.WEATHER_NAME FROM WEATHER_FACTOR -->
+			SELECT * FROM WEATHER_FACTOR ORDER BY ROW_NAMES DESC
+	</select>
+
+	<select id = "crime_all_Dao" resultType="com.semifinal.vancouvercrime.dto.ContentDto">	
+	
+		SELECT * FROM WEATHER_FACTOR ORDER BY ROW_NAMES DESC
+
+	</select>
+	
+	
+	
+	<select id = "lat_long_Dao" resultType="com.semifinal.vancouvercrime.dto.ContentDtomap">	
+		<!-- DELETE FROM BOARD WHERE MID = #{param1} -->
+		
+		
+		<!-- SELECT LATITUDE, LONGITUDE FROM CRIME_WEATHER WHERE NEIGHBOURHOOD = #{param1} AND YEAR= #{param2} -->
+		SELECT LATITUDE, LONGITUDE FROM CRIME_WEATHER WHERE NEIGHBOURHOOD = #{param1} AND YEAR= #{param2} LIMIT 800
+
+	</select>
+
+
+</mapper>
