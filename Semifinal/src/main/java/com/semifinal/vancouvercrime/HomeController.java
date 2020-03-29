@@ -392,8 +392,8 @@ public class HomeController {
 		rCon.eval("library(ggmap)"); 
 		rCon.eval("library(maps)"); 
 		rCon.eval("library(mapproj)"); 
-		rCon.eval("register_google(key='AIzaSyC_VqHi1Z74_t8TpGD-41fmb9fgDMwbH1Y')"); 
-				
+		rCon.eval("register_google(key='')"); 
+				//키 나중에 넣어야함 
 		
 		System.out.println("범죄별 연도별 자르기");
 		
